@@ -43,7 +43,7 @@ const click1 =()=>{
     
   return (
     <>
-     <div className='bg-orange-800 '>
+     <div className='bg-orange-100 min-h-screen '>
     <div className='h-40'>
         <h1 className='text-xl absolute left-4 top-3 font-bold text-rose-300'>Write Notes:-</h1>
         <input type="text" className='bg-black mx-2 my-14 mb-0 rounded-md h-10 w-64 px-5 outline-none text-white ' placeholder='Write your notes' name='title' value={data} onChange={handelchange} />
@@ -54,7 +54,7 @@ const click1 =()=>{
    <hr/>
 
 
-   <button onClick={removeall}className='bg-red-300 my-5 rounded-md h-8 w-20' >Removeall</button>
+   <button onClick={removeall} className='bg-red-600 my-5 rounded-md h-8 w-28 text-white ' >Remove All</button>
    <div className='flex  gap-2  h-fit w-fit flex-wrap'>
 
    {arry?.map((e, i) => (
