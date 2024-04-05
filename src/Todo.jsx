@@ -58,7 +58,7 @@ const click1 =()=>{
    <div className='flex  gap-2  h-fit w-fit flex-wrap'>
 
    {arry?.map((e, i) => (
-    <div key={i+1} className='bg-red-300 mx-6 mr-0  mb-3 h-28 w-60 rounded-lg relative break-all'> 
+    <div key={i+1} className='bg-red-300 mx-6 mr-0  mb-3 h-28 w-80 rounded-lg relative break-all'> 
         <button className="btn btn-danger btn-sm mx-48 my-3 mr-0" onClick={() => handeldelete(i)}><MdDeleteOutline /></button>
         <button className="btn btn-danger btn-sm " onClick={() => handeledit(e, i)}><MdEdit /></button> 
         <h3 className=' absolute left-2 top-6'>{e}</h3>
