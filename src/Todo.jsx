@@ -50,9 +50,6 @@ const Todo = () => {
 
   useEffect(() => {
     const storedArray = JSON.parse(localStorage.getItem("todoArry")) || [];
-    // if (storedArray) {
-    //     setarry(storedArray);
-    //   }
     setarry(storedArray);
   }, []);
 
@@ -123,7 +120,7 @@ const Todo = () => {
               >
                 <MdEdit />
               </button>
-              <h3 className=" absolute left-2 top-6">{e}</h3>
+              <h3 className=" absolute left-2 top-6 pr-3 ">{e}</h3>
             </div>
           ))}
         </div>
