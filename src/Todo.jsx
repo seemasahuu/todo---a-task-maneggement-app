@@ -36,7 +36,7 @@ const Todo = () => {
     localStorage.setItem("todoArry", JSON.stringify(updatedArry));
   
     }else{
-        const updatedArry = [...arry, data];
+        const updatedArry = [...arry];
         updatedArry[index]=data;
         setarry(updatedArry);
         localStorage.setItem("todoArry", JSON.stringify(updatedArry));
